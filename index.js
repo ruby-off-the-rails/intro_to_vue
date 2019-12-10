@@ -25,6 +25,8 @@ var app = new Vue({
       console.log('adding a bagel...');
       console.log(this.newBagel);
       this.bagels.push(this.newBagel);
+      // this.bagels.pop();
+      this.newBagel = "";
     }
   }
 });
