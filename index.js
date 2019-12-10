@@ -3,7 +3,9 @@ var app = new Vue({
   data: {
     message: "Hello Vue!",
     date: "Monday",
-    showInfo: false
+    showInfo: false,
+    bagels: ["plain", "egg", "everything"],
+    newBagel: ""
   },
   methods: {
     changeMessage: function() {
@@ -18,6 +20,11 @@ var app = new Vue({
       // } else {
       //   this.showInfo = true;
       // }
+    },
+    addBagel: function() {
+      console.log('adding a bagel...');
+      console.log(this.newBagel);
+      this.bagels.push(this.newBagel);
     }
   }
 });

@@ -26,6 +26,17 @@
       <button v-on:click="toggleInfo()">Toggle info</button>
       <div v-if="showInfo">Here is some additional information</div>
 
+      {{bagels}}
+
+      <div v-for="bagel in bagels">
+        <p>here is a ...{{ bagel }}</p>
+      </div>
+
+      <br>
+
+      Add a new Bagel<input type="text" v-model="newBagel">
+      <button v-on:click="addBagel()">Add a new bagel</button>
+
 
   </div>
 
